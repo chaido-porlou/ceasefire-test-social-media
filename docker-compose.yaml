@@ -2,6 +2,8 @@ version: '3.8'
 services:
   uc-service:
     image: harbor.ceasefire.rid-intrasoft.eu/certh_marketplaces/social_media_scraper:latest
+    labels:
+      io.portainer.accesscontrol.teams: /certh
     container_name: use-case5
     ports:
       - "8000:8000"
