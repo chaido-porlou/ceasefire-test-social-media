@@ -1,0 +1,11 @@
+# MongoDB Configuration
+MONGO_INITDB_ROOT_USERNAME=root
+MONGO_INITDB_ROOT_PASSWORD=password
+MONGO_DB=mongodb://${MONGO_INITDB_ROOT_USERNAME}:${MONGO_INITDB_ROOT_PASSWORD}@mongodb:27017/?authMechanism=DEFAULT
+
+# Other Services
+IMAGE_URL=http://160.40.51.116:35000/image_classifying
+LLAMA_URL=https://heca.iti.gr:6767/llama
+KAFKA_HOST=128.140.76.188
+KAFKA_PORT=9092
+KAFKA_TOPIC=exusA
