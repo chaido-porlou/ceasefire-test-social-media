@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   uc-service:
-    image: iti-gitlab.iti.gr:5050/ceasefire/use_case_5:1.0.0 
+    image: harbor.ceasefire.rid-intrasoft.eu/certh_marketplaces/social_media_scraper:latest
     container_name: use-case5
     ports:
       - "8000:8000"
@@ -14,7 +14,7 @@ services:
 
   mongodb:
     image: mongo
-    container_name: mongodb
+    container_name: mongodb-usecase5
     environment:
       MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
       MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
@@ -24,5 +24,5 @@ services:
       - social_media_network
 
 networks:
-  my_network:
+  social_media_network:
     driver: bridge
