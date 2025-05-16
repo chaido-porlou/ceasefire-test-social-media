@@ -8,7 +8,7 @@ services:
     env_file:
       - .env
     networks:
-      - my_network
+      - social_media_network
     depends_on:
       - mongodb
 
@@ -21,7 +21,7 @@ services:
     ports:
       - "27017:27017"
     networks:
-      - my_network
+      - social_media_network
 
 networks:
   my_network:
