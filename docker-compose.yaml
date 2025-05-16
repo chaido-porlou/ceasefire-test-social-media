@@ -10,7 +10,7 @@ services:
     networks:
       - social_media_network
     depends_on:
-      - mongodb
+      - mongodb-usecase5
 
   mongodb-usecase5:
     image: mongo
