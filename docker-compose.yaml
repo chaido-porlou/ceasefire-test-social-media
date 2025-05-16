@@ -12,7 +12,7 @@ services:
     depends_on:
       - mongodb
 
-  mongodb:
+  mongodb-usecase5:
     image: mongo
     container_name: mongodb-usecase5
     environment:
